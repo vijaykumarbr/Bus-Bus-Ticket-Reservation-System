@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)http://localhost/bus-ticket-booking-system-master/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style class="vjs-styles-defaults">
+      .video-js {
+        width: 300px;
+        height: 150px;
+      }
+
+      .vjs-fluid {
+        padding-top: 56.25%
+      }
+    </style><style>@keyframes beginBrowserAutofill{0%{}to{}}@keyframes endBrowserAutofill{0%{}to{}}.pac-container{background-color:#fff;position:absolute!important;z-index:1000;border-radius:2px;border-top:1px solid #d9d9d9;font-family:Arial,sans-serif;box-shadow:0 2px 6px rgba(0,0,0,0.3);-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;overflow:hidden}.pac-logo:after{content:"";padding:1px 1px 1px 0;height:18px;box-sizing:border-box;text-align:right;display:block;background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white3.png);background-position:right;background-repeat:no-repeat;background-size:120px 14px}.hdpi.pac-logo:after{background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white3_hdpi.png)}.pac-item{cursor:default;padding:0 4px;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;line-height:30px;text-align:left;border-top:1px solid #e6e6e6;font-size:11px;color:#999}.pac-item:hover{background-color:#fafafa}.pac-item-selected,.pac-item-selected:hover{background-color:#ebf2fe}.pac-matched{font-weight:700}.pac-item-query{font-size:13px;padding-right:3px;color:#000}.pac-icon{width:15px;height:20px;margin-right:7px;margin-top:6px;display:inline-block;vertical-align:top;background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons.png);background-size:34px}.hdpi .pac-icon{background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons_hdpi.png)}.pac-icon-search{background-position:-1px -1px}.pac-item-selected .pac-icon-search{background-position:-18px -1px}.pac-icon-marker{background-position:-1px -161px}.pac-item-selected .pac-icon-marker{background-position:-18px -161px}.pac-placeholder{color:gray}.pac-target-input:-webkit-autofill{animation-name:beginBrowserAutofill}.pac-target-input:not(:-webkit-autofill){animation-name:endBrowserAutofill}
+</style>
+  <title>Bus Ticket Booking</title>
+  <link rel="stylesheet" type="text/css" href="./Bus Ticket Booking_files/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./Bus Ticket Booking_files/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="./Bus Ticket Booking_files/style.css">
+  <link rel="stylesheet" crossorigin="anonymous" href="./Bus Ticket Booking_files/main.css"><script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="./Bus Ticket Booking_files/bootstrap.min.js.download"></script>
+<script type="text/javascript" charset="UTF-8" src="./Bus Ticket Booking_files/common.js.download"></script><script type="text/javascript" charset="UTF-8" src="./Bus Ticket Booking_files/util.js.download"></script><script type="text/javascript" charset="UTF-8" src="./Bus Ticket Booking_files/controls.js.download"></script><script type="text/javascript" charset="UTF-8" src="./Bus Ticket Booking_files/places_impl.js.download"></script></head>
+<body>
+<div class="navbar fixed-top navbar-default header">
+<div class="container-fluid">
+	<h3>Bus Ticket Booking System</h3>
+	<div class="navbar-right"><form action="http://localhost/bus-ticket-booking-system-master/index.php" method="post" class="form-inline">
+		<input type="text" name="uname" placeholder="Username" class="form-control-sm mr-1">
+		<input type="password" name="upass" placeholder="Password" class=" form-control-sm mr-1">
+		<input type="submit" name="login" value="Login" class="btn btn-info btn-sm">
+	</form></div>
+</div></div><table width="100%">
+<tbody><tr>
+	<td width="70%">
+		<img src="./Bus Ticket Booking_files/cover_bus.jpg" alt="Bus" height="100%">
+	
+	</td><td width="30%">
+				<h4 class="my-3">Create an Account</h4>
+		<form action="http://localhost/bus-ticket-booking-system-master/index.php" method="post">
+	    <div class="form-group row">
+	      <label for="uname" class="col-sm-2 col-form-label">Username</label>
+	      <div class="col-sm-7">
+	        <input name="uname" type="text" class="form-control" id="inputUname" placeholder="Username">
+	      </div>
+		  <div class="col-sm-2" id="infoUname"></div>
+	    </div>
+	    <div class="form-group row">
+	      <label for="name" class="col-sm-2 col-form-label">Name</label>
+	      <div class="col-sm-7">
+	        <input name="name" type="text" class="form-control" id="inputName" placeholder="Full Name">
+	      </div>
+		  <div class="col-sm-2" id="infoName"></div>
+	    </div>
+	    <div class="form-group row">
+	      <label for="email" class="col-sm-2 col-form-label">Email</label>
+	      <div class="col-sm-7">
+	        <input name="email" type="text" class="form-control" id="inputEmail" placeholder="Email">
+	      </div>
+		  <div class="col-sm-2" id="infoEmail"></div>
+	    </div>
+	    <div class="form-group row">
+	      <label for="upass" class="col-sm-2 col-form-label">Password</label>
+	      <div class="col-sm-7">
+	        <input name="password" type="password" class="form-control" id="inputPassword" placeholder="Password">
+	      </div>
+		  <div class="col-sm-2" id="infoPass"></div>
+	    </div>
+	    <div class="form-group row">
+	      <label class="col-form-legend col-sm-2" for="gender">Gender</label>
+	      <div class="col-sm-7 px-5">
+	        <input class="form-check-input" type="radio" name="gender" id="radioMale" value="1" checked=""> Male <br>
+            <input class="form-check-input" type="radio" name="gender" id="radioFemale" value="2"> Female
+	      </div>
+	    </div>
+	    <div class="form-group row">
+	      <label class="col-form-legend col-sm-2" for="utype">User Type</label>
+	      <div class="col-sm-7 px-5">
+	        <input class="form-check-input" type="radio" name="utype" id="radioPass" value="3" checked=""> Passenger <br>
+            <input class="form-check-input" type="radio" name="utype" id="radioBO" value="2"> Bus Owner
+	      </div>
+	    </div>
+	    <div class="form-group row">
+	      <label for="address" class="col-sm-2 col-form-label">Address</label>
+	      <div class="col-sm-7">
+	        <input name="address" type="text" class="form-control pac-target-input" id="inputAddress" placeholder="Address" autocomplete="off">
+	      </div>
+		  <div class="col-sm-2" id="infoAddress"></div>
+	    </div>
+
+	    <script type="text/javascript">
+		var autocomplete;
+		function initialize() {
+			autocomplete = new google.maps.places.Autocomplete(document.getElementById("inputAddress"));
+			autocomplete.setComponentRestrictions({'country': 'bd'});
+			google.maps.event.addListener(autocomplete, 'place_changed', function() {});
+		}
+	    </script>
+	    <script src="./Bus Ticket Booking_files/js" async="" defer=""></script>
+		<div class="form-group row">
+	      <label for="mobile" class="col-sm-2 col-form-label">Mobile</label>
+	      <div class="col-sm-7 input-group">
+	      	<span class="input-group-addon">+91</span>
+	        <input name="mobile" type="text" class="form-control" id="inputMobile" placeholder="Mobile No.">
+	      </div>
+		  <div class="col-sm-2" id="infoMobile"></div>
+	    </div>
+	    <div class="form-group row">
+	      <div class="offset-sm-2 col-sm-10">
+	        <button type="submit" class="btn btn-primary" name="signup">Sign Up</button>
+	      </div>
+	    </div>
+		<script async="">
+		$("#inputUname").keyup(function() {
+			$.ajax({
+				url: "inc/ajax.php?type=username&q=" + $(this).val(),
+				success: function(result) {
+					$("#infoUname").html(result);
+				}
+			});
+		});
+		$("#inputName").keyup(function() {
+			if ( $(this).val().match('^[a-zA-Z ]{3,16}$') ) {
+				$("#infoName").html(' ');
+			}
+			else {
+				$("#infoName").html('<span class="text-danger">Invalid Name</span>');
+			}
+		});
+		$("#inputEmail").keyup(function() {
+			$.ajax({
+				url: "inc/ajax.php?type=email&q=" + $(this).val(),
+				success: function(result) {
+					$("#infoEmail").html(result);
+				}
+			});
+		});
+		$("#inputPassword").keyup(function() {
+			if ($(this).val().length >= 6) {
+				$("#infoPass").html(' ');
+			}
+			else {
+				$("#infoPass").html('<span class="text-danger">Weak Password</span>');
+			}
+		});
+		$("#inputAddress").keyup(function() {
+			if ( $(this).val().match('^[a-zA-Z0-9 ,-]{5,120}$') ) {
+				$("#infoAddress").html(' ');
+			}
+			else {
+				$("#infoAddress").html('<span class="text-danger">Invalid Address</span>');
+			}
+		});
+		$("#inputMobile").keyup(function() {
+			if ( $(this).val().match('^[0-9]{10,10}$') ) {
+				$("#infoMobile").html(' ');
+			}
+			else {
+				$("#infoMobile").html('<span class="text-danger">Invalid Number</span>');
+			}
+		});
+		</script>
+	  </form>
+	</td>
+</tr>
+</tbody></table>
+
+	
+
+<div class="footer">
+	<div class="row p-4">
+		<div class="col-md-4">VKBS, owned and operated by VK Groups Limited, is a premium online and on-demand service provider committed to make your life convenient, easier and smarter.<br>© 2018-2022 VKBS · All Rights Reserved</div>
+		<div class="col-md-4 text-center">
+		<ul class="list-null">
+            <li><a href="http://localhost/bus-ticket-booking-system-master/#">About Us</a></li>
+            <li><a href="http://localhost/bus-ticket-booking-system-master/#">Contact Us</a></li>
+            <li><a href="http://localhost/bus-ticket-booking-system-master/#">Terms of Use</a></li>
+            <li><a href="http://localhost/bus-ticket-booking-system-master/#">Privacy Policy</a></li>
+        </ul>
+        </div>
+		<div class="col-md-4 text-center text-light">
+		<ul class="list-null">
+            <li><a target="_blank" href="http://facebook.com/#"><i class="fa fa-facebook"></i></a></li>
+            <li><a target="_blank" href="http://www.instagram.com/#"><i class="fa fa-instagram"></i></a></li>
+            <li><a target="_blank" href="http://www.linkedin.com/#"><i class="fa fa-linkedin"></i></a></li>
+            <li><a target="_blank" href="http://twitter.com/#"><i class="fa fa-twitter"></i></a></li>
+        </ul>
+		</div>
+	</div>
+</div>
+
+
+	<div class="pac-container pac-logo hdpi" style="display: none; width: 250px; position: absolute; left: 1146px; top: 520px;"></div></body></html>
