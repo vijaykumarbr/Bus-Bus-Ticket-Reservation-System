@@ -2,10 +2,8 @@
 An online Bus Ticket Booking and Management System implemented using __PHP, MySQL__ and __HTML__
 
 _Supervisor:_
-
-&nbsp;&nbsp;&nbsp;&nbsp;AZM Ehtesham Chowdhury,<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Assistant Professor, Department of Computer Science,<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Assistant ProfessorAmerican International University-Bangladesh
+Vijay kumar B R <br>
+GM Istitute of Technology Davanagere
 
  ----------------------------------------------
  
